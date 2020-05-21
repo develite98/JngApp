@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "JavaScript Tutorial",
+        "image": "../../../assets/tutImage/javascript.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Angular Tutorial",
+        "image": "../../../assets/tutImage/angular.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Bootstrap Tutorial",
+        "image": "../../../assets/tutImage/bootstrap.jpg"
+    },
+    {
+        "id": 4,
+        "title": "CSS Tutorial",
+        "image": "../../../assets/tutImage/css.jpg"
+    },
+    {
+        "id": 5,
+        "title": ".NET Tutorial",
+        "image": "../../../assets/tutImage/net.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Riven Tutorial",
+        "image": "../../../assets/tutImage/riven.jpg"
+    }
+]
