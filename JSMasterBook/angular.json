@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "JSMasterBook"
+  "defaultProject": "JSMasterBook",
+  "cli": {
+    "analytics": false
+  }
 }

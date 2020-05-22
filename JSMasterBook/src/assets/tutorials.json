@@ -2,31 +2,61 @@
     {
         "id": 1,
         "title": "JavaScript Tutorial",
-        "image": "../../../assets/tutImage/javascript.jpg"
+        "image": "../../../assets/tutImage/javascript.jpg",
+        "lession": [
+            { "lessionName" : "Functional Programing" },
+            { "lessionName" : "Higher-Order Function" },
+            { "lessionName" : "Data Types" }
+        ]
     },
     {
         "id": 2,
         "title": "Angular Tutorial",
-        "image": "../../../assets/tutImage/angular.jpg"
+        "image": "../../../assets/tutImage/angular.jpg",
+        "lession": [
+            { "lessionName" : "TypeScript" },
+            { "lessionName" : "Components" },
+            { "lessionName" : "Modules" }
+        ]
     },
     {
         "id": 3,
         "title": "Bootstrap Tutorial",
-        "image": "../../../assets/tutImage/bootstrap.jpg"
+        "image": "../../../assets/tutImage/bootstrap.jpg",
+        "lession": [
+            { "lessionName" : "Grid" },
+            { "lessionName" : "Component" },
+            { "lessionName" : "Layout" }
+        ]
     },
     {
         "id": 4,
         "title": "CSS Tutorial",
-        "image": "../../../assets/tutImage/css.jpg"
+        "image": "../../../assets/tutImage/css.jpg",
+        "lession": [
+            { "lessionName" : "Selector" },
+            { "lessionName" : "SCSS" },
+            { "lessionName" : "BEM" }
+        ]
     },
     {
         "id": 5,
         "title": ".NET Tutorial",
-        "image": "../../../assets/tutImage/net.jpg"
+        "image": "../../../assets/tutImage/net.jpg",
+        "lession": [
+            { "lessionName" : "ASP.Net Core" },
+            { "lessionName" : "Design Patterns" },
+            { "lessionName" : "Micro Services" }
+        ]
     },
     {
         "id": 6,
         "title": "Riven Tutorial",
-        "image": "../../../assets/tutImage/riven.jpg"
+        "image": "../../../assets/tutImage/riven.jpg",
+        "lession": [
+            { "lessionName" : "Fast Combos" },
+            { "lessionName" : "Hight Lights" },
+            { "lessionName" : "Items Building" }
+        ]
     }
 ]

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TutorialsServiceService } from 'src/app/shared/service/tutorials-service.service';
-import { Tutorial } from 'src/app/shared/models/tutorial';
+import { Tutorial, Lession } from 'src/app/shared/models/tutorial';
 import { HttpClient } from '@angular/common/http';
 import { Location } from '@angular/common';
 import { Observable, throwError } from 'rxjs';
@@ -15,6 +15,7 @@ import { retry, catchError, filter, delay, map } from 'rxjs/operators';
 export class TutorialDetailComponent implements OnInit {
   tutorial: Tutorial[];
   result: Tutorial;
+  lessionList: Lession[];
   id: string;
   idOfTutorial = '';
   titOfTutorial = '';
@@ -35,7 +36,8 @@ export class TutorialDetailComponent implements OnInit {
       // tslint:disable-next-line:one-line
       { this.tutorial = val;
         this.result = this.tutorial.find(x => x.id === Number(this.id));
-        this.titOfTutorial = this.result.title.toString(); });
+        this.titOfTutorial = this.result.title.toString();
+        this.lessionList = this.result.lession; });
   }
 
 

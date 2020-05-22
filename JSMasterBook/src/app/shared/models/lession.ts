@@ -1,3 +1,2 @@
-export interface Tutorial {
-    lessionName: string;
-}
+// export interface Lession {
+// }
