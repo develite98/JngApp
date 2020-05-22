@@ -2,11 +2,12 @@
 <div class="detail-container">
     <p>{{titOfTutorial}}</p>
     <div class="container">
-        <div *ngFor="let lession of this.lessionList" class="card" >
+        <div draggable="true" *ngFor="let lession of this.lessionList" class="card" >
             <img src="../../../assets/tutImage/arrow.png">
             <div class="card-title">
                 <p>{{lession.lessionName}}</p>
             </div>
+            <div class="lmask"></div>
         </div>
     </div>
 </div>
