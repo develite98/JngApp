@@ -1,6 +1,7 @@
 nav {
     overflow: hidden;
     background-color: white;
+    box-shadow: -1px 14px 16px -14px rgba(0,0,0,0.4);
     position: fixed;
     align-items: center;
     display: flex;
@@ -17,12 +18,15 @@ nav {
         a {
           color: #1dcec1;
           text-decoration: none;
+          cursor:  default;
           padding: 14px;
-          &:hover {
-            color: #1dcec1;
-          }
           & span{
-            color: gold;
+            font-family: 'Piedra', cursive;
+            font-weight: normal;
+            color: #FFB18A;
+            &:hover {
+              color: #1dcec1;
+            }
           } 
         }
       }
@@ -54,6 +58,7 @@ nav {
               border-width: 0 0 10px 0px;
               border-style: solid;;
               border-color: #1dcec1;
+              cursor: default;
             }
         }
         

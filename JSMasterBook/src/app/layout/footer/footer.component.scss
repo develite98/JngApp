@@ -15,18 +15,18 @@
         font-family: "Fira Sans", sans-serif;
         font-size: 17px;
         a {
-            color: goldenrod;
+            color: #1dcec1;
           text-decoration: none;
           padding: 14px;
           &:hover {
             background-color: #111;
-            color: goldenrod;
+            color: #1dcec1;
           }
           &.home-logo{
             font-size: 25px; 
             }
             &.selected{
-                color: goldenrod;
+                color: #1dcec1;
             }
         }
         
