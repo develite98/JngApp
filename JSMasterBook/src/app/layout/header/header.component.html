@@ -1,16 +1,16 @@
 <div id="navigation-bar">
     <nav>
         <div class="nav-top">
-            <li><a  class="home-logo" routerLink="/" id="logo"><span>W</span> Book</a></li> 
+            <li><a  class="home-logo" routerLink="/" id="logo"><span>W</span>{{' Book' | uppercase}}</a></li> 
         </div>
         <div class="nav-bottom">
             <ul>   
                 <li><a 
                         routerLink="home"
                         routerLinkActive="selected"
-                        [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-                <li><a routerLink="tuts" routerLinkActive="selected">Tutorials</a></li>
-                <li><a routerLink="details" routerLinkActive="selected">Abouts</a></li>
+                        [routerLinkActiveOptions]="{exact: true}">{{'Home' | uppercase}}</a></li>
+                <li><a routerLink="tuts" routerLinkActive="selected">{{'Tutorials' | uppercase}}</a></li>
+                <li><a routerLink="details" routerLinkActive="selected">{{'Abouts' | uppercase}}</a></li>
             </ul>
         </div>
     </nav>
