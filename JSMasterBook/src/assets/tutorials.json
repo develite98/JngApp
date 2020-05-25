@@ -16,7 +16,10 @@
         "lession": [
             { "lessionName" : "TypeScript" },
             { "lessionName" : "Components" },
-            { "lessionName" : "Modules" }
+            { "lessionName" : "Modules" },
+            { "lessionName" : "RxJS" },
+            { "lessionName" : "NgRX" },
+            { "lessionName" : "Best Practices" }
         ]
     },
     {

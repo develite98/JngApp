@@ -1,15 +1,17 @@
 <div id="navigation-bar">
     <nav>
-        <ul>
-            <li><a  class="home-logo" 
-                    routerLink="/" 
-                    id="logo">JS Master Book</a></li>
-            <li><a 
-                    routerLink="home"
-                    routerLinkActive="selected"
-                    [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-            <li><a routerLink="tuts" routerLinkActive="selected">Tutorials</a></li>
-            <li><a routerLink="details" routerLinkActive="selected">Details</a></li>
-        </ul>
+        <div class="nav-top">
+            <li><a  class="home-logo" routerLink="/" id="logo"><span>JS</span> Master Book</a></li> 
+        </div>
+        <div class="nav-bottom">
+            <ul>   
+                <li><a 
+                        routerLink="home"
+                        routerLinkActive="selected"
+                        [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+                <li><a routerLink="tuts" routerLinkActive="selected">Tutorials</a></li>
+                <li><a routerLink="details" routerLinkActive="selected">Abouts</a></li>
+            </ul>
+        </div>
     </nav>
 </div>
