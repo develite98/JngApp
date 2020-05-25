@@ -80,14 +80,15 @@
     }
     &:hover {
         transform: scale(1.2);
-        animation-name: example;
-        animation-duration: 2s;
+        // animation-name: example;
+        // animation-duration: 2s;
         cursor: pointer;
     }
 
     &:hover > .lmask{
         display: block;
     }
+
     & .lmask {
         display: none;
         z-index: 999;

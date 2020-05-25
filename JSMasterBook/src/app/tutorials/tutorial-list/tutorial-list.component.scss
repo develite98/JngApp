@@ -1,5 +1,5 @@
 .card{
-    width: 250px;
+    width: 80%;
     height: 250px;
     margin: 20px;
     border-radius: 0.5rem;
@@ -32,7 +32,7 @@
         }
     }
 
-    & .card-arrow {
+    &-arrow {
         position: absolute;
         bottom: 5%;
         height: auto;
@@ -40,8 +40,9 @@
         width: 100%;
         align-items: center;
         & a {
-            color: goldenrod;
+            color: #1dcec1;
             font-weight: bold;
+            overflow: hidden;
         }
     }
 
