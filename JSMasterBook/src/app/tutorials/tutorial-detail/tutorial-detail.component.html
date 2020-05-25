@@ -1,6 +1,6 @@
 <button (click)="onBack()" class="back-btn">Back</button>
 <div class="detail-container">
-    <p>{{titOfTutorial}}</p>
+    <p class="detail-container__title">{{titOfTutorial}}</p>
     <div class="container">
         <div draggable="true" *ngFor="let lession of this.lessionList" class="card" >
             <img src="../../../assets/tutImage/arrow.png">
