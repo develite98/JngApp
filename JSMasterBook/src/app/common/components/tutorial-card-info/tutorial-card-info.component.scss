@@ -1,0 +1,75 @@
+.tutorial-card-info {
+    font-family: Roboto, sans-serif;
+    background: white;
+    padding: 20px 0px 10px 0px;
+    width: 300px;
+    height: 320px;
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    &___card-header {
+      color: black;
+      height: 8%;
+    };
+    
+    &__card-content {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+
+      & img {
+            width: 100%;
+            height: 150px;
+      }
+      
+      &__card-info {
+        padding: 5px;
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        color: #303450;
+        &.--general-info {
+          display: inline-block;
+          color: #1dcec1;
+          & span {
+               font-size: 12px;
+               font-style: italic;
+          }
+
+          & span.timing {
+              color: #303450;
+              font-weight: bold;
+              font-style: normal;
+          }
+        }
+        &.--title {
+          padding: 5px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+        
+    };
+    &__card-footer {
+      display: inline-block;
+      & span {
+          font-size: 10px;
+          padding: 4px;
+          margin: 4px;
+          border-radius: 5px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #d8dce6;
+      }
+    };
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 20px 0px rgba(29,206,193,0.5);
+    }
+  }

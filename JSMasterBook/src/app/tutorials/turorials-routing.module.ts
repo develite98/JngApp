@@ -4,6 +4,7 @@ import { TutorialDetailComponent } from './tutorial-detail/tutorial-detail.compo
 import { NgModule } from '@angular/core';
 
 
+
 const routes: Routes = [
     { path: 'tuts', component: TutorialListComponent},
     { path: 'home/tuts', component: TutorialListComponent},

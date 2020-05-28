@@ -9,10 +9,16 @@ import { Tutorial } from '../../shared/models/tutorial';
 })
 export class TutorialListComponent implements OnInit {
   tutorial: Tutorial[];
+  notShowSpinner = false;
   constructor(private tutService: TutorialsServiceService) { }
 
   ngOnInit(): void {
-    this.tutService.getTutorial().subscribe(val => this.tutorial = val);
+    this.tutService.getTutorial().subscribe(val => {
+      setTimeout(() => {
+        this.tutorial = val;
+        this.notShowSpinner = true;
+      }, 1500);
+    });
   }
 
   onClick() {

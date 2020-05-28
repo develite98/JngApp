@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "JavaScript Tutorial",
+        "title": "JavaScript",
         "image": "../../../assets/tutImage/javascript.jpg",
         "lession": [
             { "lessionName" : "Functional Programing" },
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "title": "Angular Tutorial",
+        "title": "Angular",
         "image": "../../../assets/tutImage/angular.jpg",
         "lession": [
             { "lessionName" : "TypeScript" },
@@ -24,7 +24,7 @@
     },
     {
         "id": 3,
-        "title": "Bootstrap Tutorial",
+        "title": "Bootstrap",
         "image": "../../../assets/tutImage/bootstrap.jpg",
         "lession": [
             { "lessionName" : "Grid" },
@@ -34,7 +34,7 @@
     },
     {
         "id": 4,
-        "title": "CSS Tutorial",
+        "title": "CSS",
         "image": "../../../assets/tutImage/css.jpg",
         "lession": [
             { "lessionName" : "Selector" },
@@ -44,7 +44,7 @@
     },
     {
         "id": 5,
-        "title": ".NET Tutorial",
+        "title": ".NET",
         "image": "../../../assets/tutImage/net.jpg",
         "lession": [
             { "lessionName" : "ASP.Net Core" },
@@ -54,7 +54,7 @@
     },
     {
         "id": 6,
-        "title": "Riven Tutorial",
+        "title": "Riven",
         "image": "../../../assets/tutImage/riven.jpg",
         "lession": [
             { "lessionName" : "Fast Combos" },

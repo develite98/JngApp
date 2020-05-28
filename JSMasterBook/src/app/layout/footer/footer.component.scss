@@ -2,7 +2,11 @@
     overflow: hidden;
     background-color: #333;
     position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 999;
+    height: 100px;
     bottom: 0;
     width: 100%;
     ul {
@@ -12,22 +16,17 @@
       padding: 15px;
       li {
         display: inline;
-        font-family: "Fira Sans", sans-serif;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         font-size: 17px;
         a {
             color: #1dcec1;
           text-decoration: none;
           padding: 14px;
-          &:hover {
-            background-color: #111;
-            color: #1dcec1;
-          }
-          &.home-logo{
-            font-size: 25px; 
-            }
-            &.selected{
-                color: #1dcec1;
-            }
+        }
+        .copyright{
+          color: #1dcec1;
+          text-decoration: none;
+          font-size: 12px;
         }
         
       }
