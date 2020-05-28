@@ -17,6 +17,7 @@ import { TutorialsModule } from './tutorials/tutorials.module';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialsServiceService } from './shared/service/tutorials-service.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,7 @@ import { TutorialsServiceService } from './shared/service/tutorials-service.serv
     FooterComponent,
     HomeComponent,
     DetailComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
   ],
   imports: [
     HttpClientModule,

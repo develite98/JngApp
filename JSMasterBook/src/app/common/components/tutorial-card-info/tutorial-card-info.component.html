@@ -1,0 +1,27 @@
+<div class="tutorial-card-info"
+    [routerLink]="['/details',tutorial.id]">
+    <div class="tutorial-card-info__card-header">
+    </div>
+    <div class="tutorial-card-info__card-content">
+        <img src="{{tutorial.image}}" alt="">
+       <div class="tutorial-card-info__card-content__card-info">
+         <div class="tutorial-card-info__card-content__card-info --general-info">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span> (28 -05 -2020) </span>
+            <span class="timing">   <i class="far fa-clock"></i> 30m</span>
+
+         </div>
+         <div class="tutorial-card-info__card-content__card-info --title">
+           <span>{{tutorial.title}}</span>
+         </div>
+       </div> 
+    </div>
+    <div class="tutorial-card-info__card-footer">
+        <span> Activated <i class="fas fa-check-circle"></i> </span>
+        <span> Verify <i class="fas fa-check-circle"></i> </span>
+    </div>
+</div>

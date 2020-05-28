@@ -6,7 +6,7 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
-    z-index: 99999;
+    z-index: 9999999999;
     top: 0;
     width: 100%;
     & .nav-top {
@@ -23,11 +23,18 @@ nav {
           & span{
             font-family: 'Piedra', cursive;
             font-weight: normal;
-            color: #FFB18A;
+            color: rgba(0,120,212,0.5);
             &:hover {
               color: #1dcec1;
             }
-          } 
+          }
+          
+          & span.version{
+              font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+              color: #1dcec1;
+              font-size: 20px;
+              letter-spacing: 2px;
+          }
         }
       }
       &.nav-smaller{

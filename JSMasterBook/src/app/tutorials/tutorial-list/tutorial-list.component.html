@@ -1,12 +1,7 @@
-
+<app-p-spinner [ShowSpinner]="notShowSpinner"></app-p-spinner>
 <div class="container">
-    <div *ngFor="let tut of tutorial" class="card" >
-        <img src="{{tut.image}}" class="image">
-        <div class="card-title">
-            <p>{{tut.title}}</p>
-        </div>
-        <div class="card-arrow">
-            <a [routerLink]="['/details',tut.id]">See More</a>
-        </div>
-    </div>
+    <app-tutorial-card-info *ngFor="let tut of tutorial" [data]="tut">
+    </app-tutorial-card-info>
 </div>
+
+
