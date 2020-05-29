@@ -8,9 +8,16 @@
                 <li><a 
                         routerLink="home"
                         routerLinkActive="selected"
-                        [routerLinkActiveOptions]="{exact: true}">{{'Home' | uppercase}}</a></li>
-                <li><a routerLink="tuts" routerLinkActive="selected">{{'Tutorials' | uppercase}}</a></li>
-                <li><a routerLink="details" routerLinkActive="selected">{{'Abouts' | uppercase}}</a></li>
+                        [routerLinkActiveOptions]="{exact: true}">{{'demo.Home' | translate}}</a></li>
+                <li><a routerLink="tuts" routerLinkActive="selected">{{'demo.Tutorials' | translate}}</a></li>
+                <li><a routerLink="details" routerLinkActive="selected">{{'demo.About' | translate}}</a></li>
+                <li><a class="drop-down"><i class="fas fa-cog"></i></a>
+                    <div class="drop-down-item">
+                        <li (click)="switchLanguage('en')"> EN</li>
+                        <li (click)="switchLanguage('vi')"> Vi</li>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </nav>
