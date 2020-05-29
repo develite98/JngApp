@@ -10,9 +10,18 @@
     justify-content: flex-start;
     flex-direction: column;
     
-    &___card-header {
-      color: black;
-      height: 8%;
+    &__card-header {
+        position: relative;
+        height: 8%;
+        & a {
+            color: black;
+            position: absolute;
+            left: 10%;
+            bottom: 20%;
+            &:hover {
+                color: #1dcec1;
+            }
+        }
     };
     
     &__card-content {
@@ -75,6 +84,11 @@
 
     &:active {
         border: none;
+    }
+
+    &.sticky {
+        position: sticky;
+        top: 65px;
     }
   }
 

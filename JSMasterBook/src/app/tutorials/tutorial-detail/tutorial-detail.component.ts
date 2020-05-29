@@ -13,6 +13,7 @@ import { retry, catchError, filter, delay, map } from 'rxjs/operators';
   styleUrls: ['./tutorial-detail.component.scss']
 })
 export class TutorialDetailComponent implements OnInit {
+  isDetailPage = true;
   notShowSpinner = false;
   tutorial: Tutorial[];
   result: Tutorial;
