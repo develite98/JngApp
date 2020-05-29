@@ -10,6 +10,8 @@ export class TutorialCardInfoComponent implements OnInit {
 
   // tslint:disable-next-line:no-input-rename
   @Input('data') tutorial: Tutorial;
+  // tslint:disable-next-line:no-input-rename
+  @Input('isDetailPage') isDetailPage = false;
   constructor() { }
 
   ngOnInit(): void {

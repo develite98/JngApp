@@ -8,8 +8,18 @@
             { "lessionName" : "Why ?" },
             { "lessionName" : "How ?" },
             { "lessionName" : "Functional Programing" },
-            { "lessionName" : "Higher-Order Function" },
-            { "lessionName" : "Data Types" }
+            { "lessionName" : "Data Types" },
+            { "lessionName" : "Primitive Values" },
+            { "lessionName" : "Object" },
+            { "lessionName" : "Null & Undefined" },
+            { "lessionName" : "Type Coercion" },
+            { "lessionName" : "Truthy & Falsy Values" },
+            { "lessionName" : "Operators" },
+            { "lessionName" : "Variable & Scope" },
+            { "lessionName" : "Hoisting" },
+            { "lessionName" : "Program Structure" },
+            { "lessionName" : "Function" },
+            { "lessionName" : "Asynchronous Programing" }
         ]
     },
     {

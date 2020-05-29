@@ -1,6 +1,8 @@
 <div class="tutorial-card-info"
-    [routerLink]="['/tuts',tutorial.id]">
-    <div class="tutorial-card-info__card-header">
+    [routerLink]="['/tuts',tutorial.id]"
+    [ngClass]="{'sticky': isDetailPage}">
+    <div class="tutorial-card-info__card-header" *ngIf="isDetailPage">
+        <a routerLink="/tuts"><i class="fas fa-arrow-left"></i> Back</a>
     </div>
     <div class="tutorial-card-info__card-content">
         <img src="{{tutorial.image}}" alt="">
