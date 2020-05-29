@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TutorialsServiceService } from './shared/service/tutorials-service.service';
 import { config } from 'rxjs';
 
+
 export function HttpLoaderFactory(http: HttpClient ) {
   return new TranslateHttpLoader(http);
 }

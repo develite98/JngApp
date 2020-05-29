@@ -2,6 +2,14 @@
     "demo": {
         "Home": "Home",
         "Tutorials": "Tutorials",
-        "About": "About"
+        "About": "About",
+        "termsofuse": "Terms Of Use"
+    },
+    "home": {
+        "quote1": "Web Development Tutorials For Beginners",
+        "quote2": "Try your best !"
+    },
+    "lession-list": {
+        "schedule": "Schedule"
     }
 }

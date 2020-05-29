@@ -8,7 +8,7 @@ import { NgModule } from '@angular/core';
 const routes: Routes = [
     { path: 'tuts', component: TutorialListComponent},
     { path: 'home/tuts', component: TutorialListComponent},
-    { path: 'details/:id', component: TutorialDetailComponent},
+    { path: 'tuts/:id', component: TutorialDetailComponent},
   ];
 @NgModule({
       imports: [

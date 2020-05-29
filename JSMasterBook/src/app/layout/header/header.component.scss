@@ -95,10 +95,12 @@ nav {
             }
             &.selected{
               color: #1dcec1;
-              border-width: 0 0 10px 0px;
+              border-width: 0 0 20px 0px;
               border-style: solid;;
-              border-color: #1dcec1;
+              border-color: rgba(29, 205, 193, 1);
               cursor: default;
+              animation-name: example;
+              animation-duration: 1s;
             }
         }
         
@@ -107,4 +109,7 @@ nav {
   }
 
 
-  
+  @keyframes example {
+    from { border-color: rgba(29, 205, 193, 0.2);}
+    to { border-color: rgba(29, 205, 193, 1);}
+  }
