@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wbook-4b058": {
+      "hosting": {
+        "JSMasterBook": [
+          "wbook-4b058"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wbook-4b058"
+  }
+}

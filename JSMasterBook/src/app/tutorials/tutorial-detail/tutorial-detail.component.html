@@ -1,14 +1,10 @@
-<button (click)="onBack()" class="back-btn">Back</button>
+<app-p-spinner [ShowSpinner]="notShowSpinner"></app-p-spinner>
 <div class="detail-container">
-    <p class="detail-container__title">{{titOfTutorial}}</p>
-    <div class="container">
-        <div draggable="true" *ngFor="let lession of this.lessionList" class="card" >
-            <img src="../../../assets/tutImage/arrow.png">
-            <div class="card-title">
-                <p>{{lession.lessionName}}</p>
-            </div>
-            <div class="lmask"></div>
-        </div>
+    <div class="detail-left">
+        <app-tutorial-card-info [data]="result"></app-tutorial-card-info>
+    </div>
+    <div class="detail-right">
+        <app-lession-list [data]="lessionList"></app-lession-list>
     </div>
 </div>
 

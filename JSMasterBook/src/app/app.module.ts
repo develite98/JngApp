@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,7 +18,12 @@ import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.co
 import { TutorialsModule } from './tutorials/tutorials.module';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialsServiceService } from './shared/service/tutorials-service.service';
+import { config } from 'rxjs';
 
+
+export function HttpLoaderFactory(http: HttpClient ) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -34,7 +41,14 @@ import { TutorialsServiceService } from './shared/service/tutorials-service.serv
     BrowserModule,
     BrowserAnimationsModule,
     TutorialsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+    })
   ],
   providers: [TutorialsServiceService],
   bootstrap: [AppComponent]

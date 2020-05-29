@@ -50,6 +50,39 @@ nav {
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         font-size: 17px;
         font-weight: 700;
+        position: relative;
+        .drop-down {
+          cursor: pointer;
+          &:hover +.drop-down-item{
+            display: inline-block;
+          }
+        }
+
+        .drop-down-item {
+          width: auto;
+          display: none;
+          position: absolute;
+          right: -65px;
+          top: -15px;
+          padding: 10px;
+          border-width: 2px;
+          border-style: solid;;
+          border-color: #999;
+          border-radius: 10px;
+
+          li {
+            color: rgb(138, 134, 134);
+            &:hover {
+              cursor: pointer;
+              color: #1dcec1;;
+            }
+          }
+
+          &:hover {
+            display: inline-block;
+          }
+        }
+
         a {
           color: rgb(138, 134, 134);
           text-decoration: none;
@@ -62,14 +95,21 @@ nav {
             }
             &.selected{
               color: #1dcec1;
-              border-width: 0 0 10px 0px;
+              border-width: 0 0 20px 0px;
               border-style: solid;;
-              border-color: #1dcec1;
+              border-color: rgba(29, 205, 193, 1);
               cursor: default;
+              animation-name: example;
+              animation-duration: 1s;
             }
         }
         
       }
     }
   }
-  
+
+
+  @keyframes example {
+    from { border-color: rgba(29, 205, 193, 0.2);}
+    to { border-color: rgba(29, 205, 193, 1);}
+  }

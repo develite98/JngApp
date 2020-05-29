@@ -17,7 +17,7 @@ export class TutorialListComponent implements OnInit {
       setTimeout(() => {
         this.tutorial = val;
         this.notShowSpinner = true;
-      }, 1500);
+      }, 1000);
     });
   }
 

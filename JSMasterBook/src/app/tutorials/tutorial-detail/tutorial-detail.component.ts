@@ -13,6 +13,7 @@ import { retry, catchError, filter, delay, map } from 'rxjs/operators';
   styleUrls: ['./tutorial-detail.component.scss']
 })
 export class TutorialDetailComponent implements OnInit {
+  notShowSpinner = false;
   tutorial: Tutorial[];
   result: Tutorial;
   lessionList: Lession[];
@@ -32,12 +33,15 @@ export class TutorialDetailComponent implements OnInit {
     });
 
     // tslint:disable-next-line:max-line-length
-    this.http.get<Tutorial[]>('../../../assets/tutorials.json').subscribe(val =>
-      // tslint:disable-next-line:one-line
-      { this.tutorial = val;
-        this.result = this.tutorial.find(x => x.id === Number(this.id));
-        this.titOfTutorial = this.result.title.toString();
-        this.lessionList = this.result.lession; });
+    this.http.get<Tutorial[]>('../../../assets/tutorials.json').subscribe(val => {
+      setTimeout(() => {
+          this.tutorial = val;
+          this.result = this.tutorial.find(x => x.id === Number(this.id));
+          this.titOfTutorial = this.result.title.toString();
+          this.lessionList = this.result.lession;
+          this.notShowSpinner = true;
+        }, 1000);
+    });
   }
 
 

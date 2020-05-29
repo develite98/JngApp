@@ -1,0 +1,10 @@
+<div class="lession-list-container">
+    <div class="lession-list-top">
+        <a>{{'lession-list.schedule' | translate}}</a>
+    </div>
+    <div class="lession-list-bottom">
+        <ul>
+            <li *ngFor="let lession of lessionList"><i class="fab fa-artstation"></i> {{lession.lessionName}}</li>
+        </ul>
+    </div>
+</div>

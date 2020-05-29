@@ -1,0 +1,15 @@
+{
+    "demo": {
+        "Home": "Trang Chủ",
+        "Tutorials": "Bài Học",
+        "About": "Về Chúng Tôi",
+        "termsofuse": "Bản quyền"
+    },
+    "home": {
+        "quote1": "Lập trình web cho người mới bắt đầu",
+        "quote2": "Hãy thử sức"
+    },
+    "lession-list": {
+        "schedule": "Lịch trình"
+    }
+}
