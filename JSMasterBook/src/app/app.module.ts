@@ -19,6 +19,7 @@ import { TutorialsModule } from './tutorials/tutorials.module';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialsServiceService } from './shared/service/tutorials-service.service';
 import { config } from 'rxjs';
+import { LessionListDetailComponent } from './common/components/lession-list-detail/lession-list-detail.component';
 
 
 export function HttpLoaderFactory(http: HttpClient ) {
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient ) {
     HomeComponent,
     DetailComponent,
     NotFoundPageComponent,
+    LessionListDetailComponent,
   ],
   imports: [
     HttpClientModule,

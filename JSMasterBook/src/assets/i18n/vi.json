@@ -1,9 +1,10 @@
 {
-    "demo": {
+    "header": {
         "Home": "Trang Chủ",
         "Tutorials": "Bài Học",
         "About": "Về Chúng Tôi",
-        "termsofuse": "Bản quyền"
+        "termsofuse": "Bản quyền",
+        "Todos": "Todos"
     },
     "home": {
         "quote1": "Lập trình web cho người mới bắt đầu",

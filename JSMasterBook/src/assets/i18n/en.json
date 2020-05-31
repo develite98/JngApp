@@ -1,9 +1,10 @@
 {
-    "demo": {
+    "header": {
         "Home": "Home",
         "Tutorials": "Tutorials",
         "About": "About",
-        "termsofuse": "Terms Of Use"
+        "termsofuse": "Terms Of Use",
+        "Todos": "Todos"
     },
     "home": {
         "quote1": "Web Development Tutorials For Beginners",

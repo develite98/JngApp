@@ -1,0 +1,29 @@
+.todo-footer {
+    position: relative;
+    height: 40px;
+    margin: 10px;
+    border-top: rgba(0, 0 ,0 , 0.1);
+
+    & .filter-btn {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 0.25rem;
+        transition: 250ms all ease-in-out;
+        outline: none;
+        background: white;
+        border: 1px solid burlywood;
+
+        &:hover, &.active {
+            border-color: #1dcec1;
+        }
+    }
+
+    & .clear-complete-btn {
+        visibility: visible;
+
+    }
+
+    & .todo-items-count {
+        padding-left: 10px;
+    }
+}

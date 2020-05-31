@@ -15,6 +15,7 @@
         height: 8%;
         & a {
             color: black;
+            font-weight: bold;
             position: absolute;
             left: 10%;
             bottom: 20%;
@@ -87,6 +88,7 @@
     }
 
     &.sticky {
+        position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 65px;
     }
