@@ -1,0 +1,19 @@
+<div class="todo-item d-flex justify-content-between align-items-center"
+    (mouseover)="isHoverred = true"
+    (mouseout)="isHoverred = false">
+    <div class="todo">
+        <input type="checkbox" class="toggle text-center">
+        <label>Todo Item</label>
+    </div>
+    <div class="d-flex align-items-center">
+        <span class="icon-wrapper text-center edit" [ngClass]="{active: isHoverred}">
+            <i class="eva eva-edit-outline"></i>
+        </span>
+        <span class="icon-wrapper text-center edit" [ngClass]="{active: isHoverred}">
+            <i class="eva eva-close"></i>
+        </span>
+    </div>
+    <form class="edit-todo-form" *ngIf="true">
+        <input type="text">
+    </form>
+</div>
