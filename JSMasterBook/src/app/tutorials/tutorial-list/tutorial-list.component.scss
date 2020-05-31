@@ -1,8 +1,7 @@
 .container {
     margin-top: 200px;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 40px;
+
+    & .col-md-4 {
+      margin-bottom: 20px;
+    }
   }

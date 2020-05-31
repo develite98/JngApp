@@ -34,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient ) {
     HomeComponent,
     DetailComponent,
     NotFoundPageComponent,
-    LessionListDetailComponent,
+    LessionListDetailComponent
   ],
   imports: [
     HttpClientModule,

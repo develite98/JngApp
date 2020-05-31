@@ -17,6 +17,8 @@ import { TodoItemComponent } from './todos-management/todo-item/todo-item.compon
 import { TodoInputComponent } from './todos-management/todo-input/todo-input.component';
 import { TodoHeaderComponent } from './todos-management/todo-header/todo-header.component';
 import { TodoFooterComponent } from './todos-management/todo-footer/todo-footer.component';
+import { LessionListItemComponent } from '../common/components/lession-list-item/lession-list-item.component';
+
 
 export function HttpLoaderFactory(http: HttpClient ) {
   return new TranslateHttpLoader(http);
@@ -34,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient ) {
     TodoItemComponent,
     TodoInputComponent,
     TodoHeaderComponent,
-    TodoFooterComponent],
+    TodoFooterComponent,
+    LessionListItemComponent],
   imports: [
     TutsRoutingModule,
     CommonModule,
