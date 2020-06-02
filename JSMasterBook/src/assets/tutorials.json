@@ -4,13 +4,28 @@
         "title": "JavaScript",
         "image": "../../../assets/tutImage/javascript.jpg",
         "lession": [
-            { "lessionName" : "What ?" },
-            { "lessionName" : "Why ?" },
-            { "lessionName" : "How ?" },
-            { "lessionName" : "Functional Programing" },
-            { "lessionName" : "Data Types" },
-            { "lessionName" : "Primitive Values" },
-            { "lessionName" : "Object" },
+
+            {   "lessionName" : "What ?",
+                "lessionWhat" : "JavaScript is a scripting or programming language that allows you to implement complex features on web pages . ." },
+            
+            {   "lessionName" : "Why ?",
+                "lessionWhat": "JavaScript is extensively used by the web developers to create various web applications and to add interactive features to them & most of the internet browsers support JavaScript . ." },
+            
+            {   "lessionName" : "How ?",
+                "lessionWhat": "The way JavaScript works is interesting. Inside a normal Web page you place some JavaScript code (See How Web Pages Work for details on Web pages). When the browser loads the page, the browser has a built-in interpreter that reads the JavaScript code it finds in the page and runs it . ." },
+            
+            {   "lessionName" : "Functional Programing",
+                "lessionWhat": "Funtional Programing (often abbreviated FB) is the process of building software by composing pure function, avoiding share state, mutable data, and side-effect . ." },
+
+            {   "lessionName" : "Data Types",
+                "lessionWhat": "Javascript variables can hold many data types: Primitive Values, Object, Boolean, Number, String, NULL, Undefined, Symbol, . ." },
+
+            {   "lessionName" : "Primitive Values",
+                "lessionWhat": "Always Immutable, Properties can't be change. ."},
+
+            {   "lessionName" : "Object",
+                "lessionWhat": "The simple way to understanding is all None Primitive values is Object. Mutable by default & User-extensible. ."},
+
             { "lessionName" : "Null & Undefined" },
             { "lessionName" : "Type Coercion" },
             { "lessionName" : "Truthy & Falsy Values" },
@@ -74,7 +89,11 @@
             { "lessionName" : "How ?" },
             { "lessionName" : "ASP.Net Core" },
             { "lessionName" : "Design Patterns" },
-            { "lessionName" : "Micro Services" }
+            { "lessionName" : "Micro Services" },
+
+            {   "lessionName" : "Fluent API ? | Entity Frame Work Core(EF Core)",
+                "lessionWhat" : "Entity Framework Core Fluent API is used to configure domain class to orverride conventions. EF Fluent API is based on a Fluent API design pattern where is the result is formulated by method chaining . ." }
+
         ]
     },
     {

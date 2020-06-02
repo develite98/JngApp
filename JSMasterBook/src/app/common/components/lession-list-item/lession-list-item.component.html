@@ -1,9 +1,15 @@
 <div class="lession-item-container">
-    <div class="lession-item">
-        <label><i class="fab fa-artstation"></i> {{title}}</label>
+    <div class="lession-item d-flex" (click)="isShowIntro = !isShowIntro" [ngClass]="{'hide-box-shadow': isShowIntro}">
+        <div class="lession-item-header" [ngClass]="{'show-info': isShowIntro}">
+            <i class="fab fa-artstation"></i>
+        </div>
+        <label> {{lession.lessionName}}</label>
     </div>
-    <div class="lession-item-intro">
-            <label>See more . . .</label>
+    <div class="lession-item-intro" [ngClass]="{'show': isShowIntro}">
+            <label>{{lession.lessionWhat}} </label>
+            <div>
+                <a href="">See more</a>
+            </div>
     </div>
 </div>
 
