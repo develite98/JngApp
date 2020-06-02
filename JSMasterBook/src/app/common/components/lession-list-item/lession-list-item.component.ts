@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Lession } from '../../../shared/models/tutorial';
 
 @Component({
   selector: 'app-lession-list-item',
@@ -7,8 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LessionListItemComponent implements OnInit {
 
+  isShowIntro = false;
+
   // tslint:disable-next-line:no-input-rename
-  @Input('title') title: string;
+  @Input('data') lession: Lession;
   constructor() { }
 
   ngOnInit(): void {

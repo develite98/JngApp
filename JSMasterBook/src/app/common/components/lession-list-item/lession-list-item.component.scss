@@ -2,25 +2,50 @@
     margin-bottom: 20px;
 
     .lession-item {
-        padding: 10px;
         background: #fff;
         border-radius: 0.25rem;
-        box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
-                  inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+                    3px 3px 5px rgba(0, 0, 0, 0.2);
+
+        &.hide-box-shadow {
+            box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+            inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .lession-item-header {
+            padding: 13px;
+            width: 80px;
+            background: #1dcec1;
+            font-size: 20px;
+            color: #fff;
+            clip-path: polygon(0 0, 69% 0, 100% 100%, 0% 100%);
+            box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+            3px 3px 5px rgba(0, 0, 0, 0.2);
+
+            &.show-info {
+                color: rgba(0,0,0,0.6);
+            }
+        }
+        
+        label {
+            padding: 10px;
+        }
+
         &:hover {
             color: #1dcec1;
+            cursor: pointer;
         }          
     
-        &:hover + .lession-item-intro {
-            display: block;
-            animation: initialDiv 1.5s;
-        }
+        // &:hover + .lession-item-intro {
+        //     display: block;
+        //     animation: initialDiv 1.5s;
+        // }
     }
     
     .lession-item-intro{
         display: none;
         margin-top: 0;
-        padding: 10px;
+        padding: 20px;
         background: #fff;
         border-radius: 0.25rem;
         border-width: 0.5px 0px 0px 0px;
@@ -31,11 +56,10 @@
         transition: 250ms all ease-in-out;
     
         & label {
-            margin-left: 10%;
             font-size: 0.85rem;
         }
 
-        &:hover {
+        &.show {
             display: block;
         }
     }
