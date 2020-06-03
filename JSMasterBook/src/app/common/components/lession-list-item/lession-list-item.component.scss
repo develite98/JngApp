@@ -59,6 +59,29 @@
             font-size: 0.85rem;
         }
 
+        & .img-shadow {
+            position: relative;
+            top: 20px;
+            margin-left: 25%;
+            & img {
+                border-radius: 10px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 220px;
+                border-radius: 10px;
+                top: -99px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+                inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+            }
+            
+        }
+
         &.show {
             display: block;
         }

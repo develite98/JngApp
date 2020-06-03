@@ -6,13 +6,16 @@
         "lession": [
 
             {   "lessionName" : "What ?",
-                "lessionWhat" : "JavaScript is a scripting or programming language that allows you to implement complex features on web pages . ." },
+                "lessionWhat" : "JavaScript is a scripting or programming language that allows you to implement complex features on web pages . .",
+                "lessionImage" : "../../../../assets/tutImage/javascript/functional-programing.png" },
             
             {   "lessionName" : "Why ?",
-                "lessionWhat": "JavaScript is extensively used by the web developers to create various web applications and to add interactive features to them & most of the internet browsers support JavaScript . ." },
+                "lessionWhat": "JavaScript is extensively used by the web developers to create various web applications and to add interactive features to them & most of the internet browsers support JavaScript . .",
+                "lessionImage" : "../../../../assets/tutImage/javascript/whyusejs.jpg" },
             
             {   "lessionName" : "How ?",
-                "lessionWhat": "The way JavaScript works is interesting. Inside a normal Web page you place some JavaScript code (See How Web Pages Work for details on Web pages). When the browser loads the page, the browser has a built-in interpreter that reads the JavaScript code it finds in the page and runs it . ." },
+                "lessionWhat": "The way JavaScript works is interesting. Inside a normal Web page you place some JavaScript code (See How Web Pages Work for details on Web pages). When the browser loads the page, the browser has a built-in interpreter that reads the JavaScript code it finds in the page and runs it . .",
+                "lessionImage" : "../../../../assets/tutImage/javascript/howusejs.jpg" },
             
             {   "lessionName" : "Functional Programing",
                 "lessionWhat": "Funtional Programing (often abbreviated FB) is the process of building software by composing pure function, avoiding share state, mutable data, and side-effect . ." },
