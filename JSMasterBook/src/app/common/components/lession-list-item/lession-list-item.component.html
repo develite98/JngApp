@@ -7,8 +7,9 @@
     </div>
     <div class="lession-item-intro" [ngClass]="{'show': isShowIntro}">
             <label>{{lession.lessionWhat}} </label>
+            <a *ngIf="isImageExist()" href="#" class="img-shadow"><img src="{{lession.lessionImage}}" alt="lighbulb" width="350" height="220" /></a>
             <div>
-                <a href="">See more</a>
+                <a href="/#">See more</a>
             </div>
     </div>
 </div>

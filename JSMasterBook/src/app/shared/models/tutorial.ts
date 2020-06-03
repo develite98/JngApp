@@ -2,6 +2,7 @@
 export interface Lession {
     lessionName: string;
     lessionWhat: string;
+    lessionImage: string;
 }
 export interface Tutorial {
     id: number;

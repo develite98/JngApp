@@ -17,4 +17,8 @@ export class LessionListItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isImageExist() {
+    return this.lession.lessionImage != null ;
+  }
+
 }
