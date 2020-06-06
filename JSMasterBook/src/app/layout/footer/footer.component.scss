@@ -1,6 +1,6 @@
 .footer-bar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #fff;
     position: relative;
     display:flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     height: 100px;
     bottom: 0;
     width: 100%;
+    box-shadow: 2px -4px 5px 0px rgba(0,0,0,0.3);
     ul {
       text-align: center;;
       list-style-type: none;
@@ -19,7 +20,7 @@
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         font-size: 17px;
         a {
-            color: #1dcec1;
+            color: #333;
           text-decoration: none;
           padding: 14px;
         }
