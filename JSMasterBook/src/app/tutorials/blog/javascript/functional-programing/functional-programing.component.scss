@@ -1,0 +1,33 @@
+.blog-container {
+    padding: 50px;
+    margin: 150px 50px 50px 50px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto Slab', serif;
+}
+
+.blog-content {
+    text-align: left;
+}
+
+h4 {
+    font-weight: bold;
+    padding-left: 15px;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: #1dcec1;
+}
+
+.label-highlight {
+    padding: 20px;
+    margin: 10px 10px 10px 30px;
+    color: black;
+    font-style: italic;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: #1dcec1;
+}

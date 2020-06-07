@@ -18,6 +18,7 @@ import { TodoInputComponent } from './todos-management/todo-input/todo-input.com
 import { TodoHeaderComponent } from './todos-management/todo-header/todo-header.component';
 import { TodoFooterComponent } from './todos-management/todo-footer/todo-footer.component';
 import { LessionListItemComponent } from '../common/components/lession-list-item/lession-list-item.component';
+import { FunctionalProgramingComponent } from './blog/javascript/functional-programing/functional-programing.component';
 
 
 export function HttpLoaderFactory(http: HttpClient ) {
@@ -37,7 +38,8 @@ export function HttpLoaderFactory(http: HttpClient ) {
     TodoInputComponent,
     TodoHeaderComponent,
     TodoFooterComponent,
-    LessionListItemComponent],
+    LessionListItemComponent,
+    FunctionalProgramingComponent],
   imports: [
     TutsRoutingModule,
     CommonModule,

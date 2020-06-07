@@ -2,7 +2,7 @@
     overflow: hidden;
     background-color: #fff;
     position: relative;
-    display:flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     z-index: 999;
@@ -10,10 +10,16 @@
     bottom: 0;
     width: 100%;
     box-shadow: 2px -4px 5px 0px rgba(0,0,0,0.3);
+
+    &.show-footer {
+      display: flex;
+    }
+
     ul {
       text-align: center;;
       list-style-type: none;
       margin: 0;
+      font-weight: bold;
       padding: 15px;
       li {
         display: inline;
