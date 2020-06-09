@@ -8,8 +8,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatSidenavModule} from '@angular/material/sidenav';
+import { LottieAnimationViewModule } from 'ng-lottie';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
 
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -19,12 +20,15 @@ import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.co
 import { TutorialsModule } from './tutorials/tutorials.module';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialsServiceService } from './shared/service/tutorials-service.service';
-import { config } from 'rxjs';
 import { LessionListDetailComponent } from './common/components/lession-list-detail/lession-list-detail.component';
 
 
 export function HttpLoaderFactory(http: HttpClient ) {
   return new TranslateHttpLoader(http);
+}
+
+export function playerFactory() {
+  return import('lottie-web');
 }
 
 @NgModule({
@@ -46,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient ) {
     BrowserAnimationsModule,
     TutorialsModule,
     AppRoutingModule,
+    LottieModule.forRoot({ player: playerFactory }),
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
