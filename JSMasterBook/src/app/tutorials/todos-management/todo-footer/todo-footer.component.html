@@ -9,6 +9,7 @@
         <button type="button"
                 class="filter-btn"
                 *ngFor="let btn of filterButton"
+                (click)="onChangeFilter(btn.type)"
                 [ngClass]="{active: btn.isActive}">{{btn.label | translate}}</button>    
     </div>
     <button class="filter-btn clear-complete-btn">{{'Clear Complete' | translate}}</button>

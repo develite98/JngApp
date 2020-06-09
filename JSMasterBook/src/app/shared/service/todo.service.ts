@@ -29,6 +29,18 @@ export class TodoService {
     this.updateToLocal();
   }
 
+  removeTodo(value: number) {
+    const arrTemp = this.toDos.filter(x => x.id !== value);
+    this.toDos = arrTemp;
+    this.updateToLocal();
+  }
+
+  changeStatusTodo(id: number) {
+    const a = this.toDos.findIndex(x => x.id === id);
+    this.toDos[a].isCompleted = !this.toDos[a].isCompleted;
+    this.updateToLocal();
+  }
+
   fetchFromLocal() {
     this.toDos = this.localstorageService.getValue<Todo[]>(TodoService.TodoKey) || [];
     this.filteredTodo = [...this.toDos.map(todo => ({...todo}))];
@@ -42,36 +54,27 @@ export class TodoService {
     this.updateDisplayTodo();
   }
 
-  changeTodoStatus(id: number, isCompleted: boolean) {
-    const index = this.toDos.findIndex(t => t.id = id);
-    const todo = this.toDos[index];
-    todo.isCompleted = isCompleted;
-    this.toDos.splice(index, 1, todo);
-    this.updateToLocal();
-  }
-
 
   private updateDisplayTodo() {
     this.displayTodoJubject.next(this.filteredTodo);
     this.lengthSubject.next(this.toDos.length);
   }
 
-  private filterTodo(filter: Filter, isFiltering: boolean = true) {
-    this.currentFilter = filter;
+  filterTodo(filter: Filter, isFiltering: boolean = true) {
     switch (filter) {
       case Filter.Active:
         this.filteredTodo = this.toDos.filter(todo => !todo.isCompleted);
+        console.log(this.filterTodo);
         break;
       case Filter.Completed:
         this.filteredTodo = this.toDos.filter(todo => todo.isCompleted);
+        console.log(this.filterTodo);
         break;
       case Filter.All:
         this.filteredTodo = [...this.toDos.map(todo => ({...todo}))];
+        console.log(this.filterTodo);
         break;
     }
-    if (isFiltering) {
-      this.updateDisplayTodo();
-    }
-
+    this.updateDisplayTodo();
   }
 }

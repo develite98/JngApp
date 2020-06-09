@@ -2,12 +2,15 @@
     (mouseover)="isHoverred = true"
     (mouseout)="isHoverred = false">
     <div class="todo">
-        <label>{{todoItem.content}}</label>
+        <label [ngClass]="{completed: todoItem.isCompleted}">{{todoItem.content}}</label>
     </div>
-    <div class="todo-control  d-flex align-items-center">
-        <span class="icon-wrapper text-center edit" [ngClass]="{active: isHoverred}">
-            <i class="eva eva-close"></i>
-        </span>
-    </div>
+    <p-splitButton class="icon-wrapper"
+                    [ngClass]="{active: isHoverred}"
+                    (onDropdownClick)="onDropdownClick(todoItem.id)"
+                    (onClick)="onChangeStatusTodo(todoItem.id)"
+                    [showTransitionOptions]="'0ms'"
+                    [hideTransitionOptions]="'0ms'"
+                    label="{{todoItem.isCompleted ? 'Not Completed' : 'Completed'}}"
+                    [model]="items"></p-splitButton>
     <label>{{todoItem.startDate | relativeTimespan}}</label>
 </div>
