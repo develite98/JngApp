@@ -1,9 +1,12 @@
 import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TutorialListComponent } from './tutorial-list/tutorial-list.component';
 import { TutorialDetailComponent } from './tutorial-detail/tutorial-detail.component';
@@ -19,6 +22,9 @@ import { TodoHeaderComponent } from './todos-management/todo-header/todo-header.
 import { TodoFooterComponent } from './todos-management/todo-footer/todo-footer.component';
 import { LessionListItemComponent } from '../common/components/lession-list-item/lession-list-item.component';
 import { FunctionalProgramingComponent } from './blog/javascript/functional-programing/functional-programing.component';
+import { RelativeTimespanPipe } from '../shared/pipe/relatetiveTimeSpan';
+import {SplitButtonModule} from 'primeng/splitbutton';
+
 
 
 export function HttpLoaderFactory(http: HttpClient ) {
@@ -40,8 +46,13 @@ export function HttpLoaderFactory(http: HttpClient ) {
     TodoFooterComponent,
     LessionListItemComponent,
     FunctionalProgramingComponent],
+    RelativeTimespanPipe],
   imports: [
     TutsRoutingModule,
+    SplitButtonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
     CommonModule,
     TranslateModule.forRoot({
       loader: {

@@ -1,1 +1,1 @@
-<input type="search" placeholder="What's need to be learning" required>
+<input type="text" [(ngModel)]="todoContent" (keyup.enter)="onSubmit()" placeholder="{{'Whats need to be learning ?' | translate}}">

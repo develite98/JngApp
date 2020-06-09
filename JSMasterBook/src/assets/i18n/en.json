@@ -12,5 +12,16 @@
     },
     "lession-list": {
         "schedule": "Schedule"
-    }
+    },
+    "minutes":"minutes",
+    "minute":"minute",
+    "hours":"hours",
+    "hour": "hour",
+    "just now": "Just now",
+    "ago": "ago",
+    "Active": "Active",
+    "All": "All",
+    "Completed": "Completed",
+    "Clear Complete": "Clear Complete",
+    "Whats need to be learning ?": "What's need to be learning ?"
 }

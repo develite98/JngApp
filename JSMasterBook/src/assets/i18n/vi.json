@@ -12,5 +12,16 @@
     },
     "lession-list": {
         "schedule": "Lịch trình"
-    }
+    },
+    "minutes":"phút",
+    "minute":"phút",
+    "hours":"giờ",
+    "hour": "giờ",
+    "just now": "Vừa mới đây",
+    "ago": "trước",
+    "Active": "Đang học",
+    "All": "Tất cả",
+    "Completed": "Hoàn tất",
+    "Clear Complete": "Xóa đã xong",
+    "Whats need to be learning ?": "Bạn sẽ học gì nào ?"
 }

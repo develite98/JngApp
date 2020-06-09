@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { TodoService } from 'src/app/shared/service/todo.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-todos-management',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosManagementComponent implements OnInit {
 
-  constructor() { }
+  hasTodo: Observable<boolean>;
 
-  ngOnInit(): void {
+  constructor(private todoService: TodoService) {}
+
+  ngOnInit() {
+    this.todoService.fetchFromLocal();
+    this.hasTodo = this.todoService.lengthSubject$.pipe(map(length => length > 0));
   }
 
 }
