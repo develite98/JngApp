@@ -18,7 +18,8 @@
                 "lessionImage" : "../../../../assets/tutImage/javascript/howusejs.jpg" },
             
             {   "lessionName" : "Functional Programing",
-                "lessionWhat": "Funtional Programing (often abbreviated FB) is the process of building software by composing pure function, avoiding share state, mutable data, and side-effect . ." },
+                "lessionWhat": "Funtional Programing (often abbreviated FB) is the process of building software by composing pure function, avoiding share state, mutable data, and side-effect . .",
+                "lessionBlog": "tuts/javascript/functional-programing"},
 
             {   "lessionName" : "Data Types",
                 "lessionWhat": "Javascript variables can hold many data types: Primitive Values, Object, Boolean, Number, String, NULL, Undefined, Symbol, . ." },

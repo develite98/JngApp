@@ -9,7 +9,7 @@
             <label>{{lession.lessionWhat}} </label>
             <a *ngIf="isImageExist()" href="#" class="img-shadow"><img src="{{lession.lessionImage}}" alt="lighbulb" width="350" height="220" /></a>
             <div>
-                <a href="/#">See more</a>
+                <a routerLink="/{{lession.lessionBlog}}">See more</a>
             </div>
     </div>
 </div>

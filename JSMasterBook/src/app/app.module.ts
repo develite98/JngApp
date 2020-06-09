@@ -20,6 +20,7 @@ import { TutorialsModule } from './tutorials/tutorials.module';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialsServiceService } from './shared/service/tutorials-service.service';
 import { LessionListDetailComponent } from './common/components/lession-list-detail/lession-list-detail.component';
+import { HomeCardInfoComponent } from './commo/component/home-card-info/home-card-info.component';
 
 
 export function HttpLoaderFactory(http: HttpClient ) {
@@ -38,7 +39,8 @@ export function playerFactory() {
     HomeComponent,
     DetailComponent,
     NotFoundPageComponent,
-    LessionListDetailComponent
+    LessionListDetailComponent,
+    HomeCardInfoComponent
   ],
   imports: [
     HttpClientModule,
