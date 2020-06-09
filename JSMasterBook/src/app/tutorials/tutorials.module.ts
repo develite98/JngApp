@@ -1,6 +1,7 @@
 import { NgModule, } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -18,6 +19,7 @@ import { TodoInputComponent } from './todos-management/todo-input/todo-input.com
 import { TodoHeaderComponent } from './todos-management/todo-header/todo-header.component';
 import { TodoFooterComponent } from './todos-management/todo-footer/todo-footer.component';
 import { LessionListItemComponent } from '../common/components/lession-list-item/lession-list-item.component';
+import { RelativeTimespanPipe } from '../shared/pipe/relatetiveTimeSpan';
 
 
 export function HttpLoaderFactory(http: HttpClient ) {
@@ -37,9 +39,11 @@ export function HttpLoaderFactory(http: HttpClient ) {
     TodoInputComponent,
     TodoHeaderComponent,
     TodoFooterComponent,
-    LessionListItemComponent],
+    LessionListItemComponent,
+    RelativeTimespanPipe],
   imports: [
     TutsRoutingModule,
+    FormsModule,
     CommonModule,
     TranslateModule.forRoot({
       loader: {

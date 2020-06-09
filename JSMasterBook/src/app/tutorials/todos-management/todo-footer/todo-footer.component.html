@@ -3,14 +3,14 @@
     style="top: 0; bottom: 0; left: 0; right: 0;"
     >
     <span class="todo-items-count">
-        {{length}} lession{{length > 1 ? 's': ''}}
+        {{lenghtOfTodoListItem}} Lession{{lenghtOfTodoListItem > 1 ? 's': ''}}
     </span>
     <div>
         <button type="button"
                 class="filter-btn"
                 *ngFor="let btn of filterButton"
-                [ngClass]="{active: btn.isActive}">{{btn.label}}</button>    
+                [ngClass]="{active: btn.isActive}">{{btn.label | translate}}</button>    
     </div>
-    <button class="filter-btn clear-complete-btn">Clear Complete</button>
+    <button class="filter-btn clear-complete-btn">{{'Clear Complete' | translate}}</button>
     </div>
 </div>

@@ -20,8 +20,9 @@ export class TodoService {
   constructor(private localstorageService: LocalStorageService) { }
 
   addTodo(value: string) {
-    const date = new Date(Date.now()).getTime();
-    const newTodo = new Todo(date, value);
+    const id = new Date(Date.now()).getTime();
+    const startDate = new Date();
+    const newTodo = new Todo(id, value, startDate);
     console.log(newTodo);
     this.toDos.unshift(newTodo);
     console.log(this.toDos);
