@@ -10,6 +10,7 @@ export class FunctionalProgramingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scroll({top: 0});
   }
 
 }

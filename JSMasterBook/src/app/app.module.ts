@@ -8,9 +8,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LottieAnimationViewModule } from 'ng-lottie';
 import { LottieModule } from 'ngx-lottie';
-import player from 'lottie-web';
 
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -46,8 +44,6 @@ export function playerFactory() {
   imports: [
     HttpClientModule,
     FormsModule,
-    MatSliderModule,
-    MatSidenavModule,
     BrowserModule,
     BrowserAnimationsModule,
     TutorialsModule,

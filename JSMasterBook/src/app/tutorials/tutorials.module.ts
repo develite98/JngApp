@@ -23,7 +23,7 @@ import { TodoFooterComponent } from './todos-management/todo-footer/todo-footer.
 import { LessionListItemComponent } from '../common/components/lession-list-item/lession-list-item.component';
 import { FunctionalProgramingComponent } from './blog/javascript/functional-programing/functional-programing.component';
 import { RelativeTimespanPipe } from '../shared/pipe/relatetiveTimeSpan';
-import {SplitButtonModule} from 'primeng/splitbutton';
+import { SplitButtonModule } from 'primeng/splitbutton';
 
 
 
@@ -45,7 +45,7 @@ export function HttpLoaderFactory(http: HttpClient ) {
     TodoHeaderComponent,
     TodoFooterComponent,
     LessionListItemComponent,
-    FunctionalProgramingComponent],
+    FunctionalProgramingComponent,
     RelativeTimespanPipe],
   imports: [
     TutsRoutingModule,
